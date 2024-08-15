@@ -23,9 +23,6 @@ class IntsAndFloats
   # unlucky = 13
   # remainder = IntsAndFloats.remainder(lucky, unlucky)
   
-  
-
-  
   # puts "Enter the lucky number (divisor): "
   # lucky = gets.to_i
 
