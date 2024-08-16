@@ -90,123 +90,123 @@ RSpec.describe 'Strings' do
     expect(actual).to eq(expected)
   end
 
-  # xit 'test 11' do
-  #   rhyme = "eeny, meeny, miny, moe"
-  #   # In place of the line below, call a method to achieve the expected output.
-  #   actual = rhyme._____
-  #   expected = "ny, mny, miny, mo"
+  it 'test 11' do
+    rhyme = "eeny, meeny, miny, moe"
+    # In place of the line below, call a method to achieve the expected output.
+    actual = rhyme.gsub(/[e]/, '')
+    expected = "ny, mny, miny, mo"
 
-  #   expect(actual).to eq(expected)
-  # end
+    expect(actual).to eq(expected)
+  end
 
-  # xit 'test 12' do
-  #   rhyme = "eeny, meeny, miny, moe"
-  #   # In place of the line below, call a method to achieve the expected output.
-  #   actual = rhyme._____
-  #   expected = "ny, mny, mny, m"
+  it 'test 12' do
+    rhyme = "eeny, meeny, miny, moe"
+    # In place of the line below, call a method to achieve the expected output.
+    actual = rhyme.gsub(/[eio]/, '')
+    expected = "ny, mny, mny, m"
 
-  #   expect(actual).to eq(expected)
-  # end
+    expect(actual).to eq(expected)
+  end
 
-  # xit 'test 13' do
-  #   greeting = "Hello World!"
-  #   # In place of the line below, call a method to get the number of characters in the string
-  #   actual = greeting._____
-  #   expected = 12
+  it 'test 13' do
+    greeting = "Hello World!"
+    # In place of the line below, call a method to get the number of characters in the string
+    actual = greeting.length
+    expected = 12
 
-  #   expect(actual).to eq(expected)
-  # end
+    expect(actual).to eq(expected)
+  end
 
-  # xit 'test 14' do
-  #   greeting = "Hello World!\n"
-  #   # In place of the line below, call a method to get the number of characters in the string
-  #   actual = greeting._____
-  #   expected = 13
+  it 'test 14' do
+    greeting = "Hello World!\n"
+    # In place of the line below, call a method to get the number of characters in the string
+    actual = greeting.length
+    expected = 13
 
-  #   expect(actual).to eq(expected)
-  # end
+    expect(actual).to eq(expected)
+  end
 
-  # xit 'test 15' do
-  #   greeting = "Hello       World!"
-  #   # In place of the line below, call a method to get the number of characters in the string
-  #   actual = greeting._____
-  #   expected = 18
+  it 'test 15' do
+    greeting = "Hello       World!"
+    # In place of the line below, call a method to get the number of characters in the string
+    actual = greeting.length
+    expected = 18
 
-  #   expect(actual).to eq(expected)
-  # end
+    expect(actual).to eq(expected)
+  end
 
-  # xit 'test 16' do
-  #   greeting = "Hello World!"
-  #   # In place of the line below, call a method to get the number of 'o' in the string
-  #   actual = greeting._____
-  #   expected = 2
+  it 'test 16' do
+    greeting = "Hello World!"
+    # In place of the line below, call a method to get the number of 'o' in the string
+    actual = greeting.count('o')
+    expected = 2
 
-  #   expect(actual).to eq(expected)
-  # end
+    expect(actual).to eq(expected)
+  end
 
-  # xit 'test 17' do
-  #   greeting = "Hello World!"
-  #   # In place of the line below, call a method to get the number of vowels in the string
-  #   actual = greeting._____
-  #   expected = 3
+  it 'test 17' do
+    greeting = "Hello World!"
+    # In place of the line below, call a method to get the number of vowels in the string
+    actual = greeting.count('aeiou')
+    expected = 3
 
-  #   expect(actual).to eq(expected)
-  # end
+    expect(actual).to eq(expected)
+  end
 
-  # xit 'test 18' do
-  #   greeting = "Hello World!"
-  #   # In place of the line below, call a method to check if the string includes 'llo'
-  #   actual = greeting._____
-  #   expected = true
+  it 'test 18' do
+    greeting = "Hello World!"
+    # In place of the line below, call a method to check if the string includes 'llo'
+    actual = greeting.include?("llo")
+    expected = true
 
-  #   expect(actual).to eq(expected)
-  # end
+    expect(actual).to eq(expected)
+  end
 
-  # xit 'test 19' do
-  #   greeting = "Hello World!"
-  #   # In place of the line below, call a method to check if the string includes 'lol'
-  #   actual = greeting._____
-  #   expected = false
+  it 'test 19' do
+    greeting = "Hello World!"
+    # In place of the line below, call a method to check if the string includes 'lol'
+    actual = greeting.include?("lol")
+    expected = false
 
-  #   expect(actual).to eq(expected)
-  # end
+    expect(actual).to eq(expected)
+  end
 
-  # xit 'test 20' do
-  #   greeting = "Hello World, my name is"
-  #   name = "Harry Potter"
-  #   # In place of the line below, use string manipulation to combine the
-  #   #greeting and name variables to acheive the expected outcome
-  #   actual = _________
-  #   expected = "Hello World, my name is Harry Potter"
+  it 'test 20' do
+    greeting = "Hello World, my name is"
+    name = "Harry Potter"
+    # In place of the line below, use string manipulation to combine the
+    #greeting and name variables to acheive the expected outcome
+    actual = "#{greeting} #{name}"
+    expected = "Hello World, my name is Harry Potter"
 
-  #   expect(actual).to eq(expected)
-  # end
+    expect(actual).to eq(expected)
+  end
 
-  # xit 'test 21' do
-  #   # See if you can use another method than the last test to achieve the same goal:
-  #   greeting = "Hello World, my name is"
-  #   name = "Harry Potter"
-  #   actual = ________
-  #   expected = "Hello World, my name is Harry Potter"
+  it 'test 21' do
+    # See if you can use another method than the last test to achieve the same goal:
+    greeting = "Hello World, my name is"
+    name = "Harry Potter"
+    actual = greeting << " " << name
+    expected = "Hello World, my name is Harry Potter"
 
-  #   expect(actual).to eq(expected)
-  # end
+    expect(actual).to eq(expected)
+  end
 
-  # xit 'test 22' do
-  #   greeting = "Hello World, my name is"
-  #   name = "Harry Potter"
-  #   actual = ________
-  #   expected = "Hello World, my name is Harry Potter"
+  it 'test 22' do
+    greeting = "Hello World, my name is"
+    name = "Harry Potter"
+    actual = greeting.concat(" ", name)
+    expected = "Hello World, my name is Harry Potter"
 
-  #   expect(actual).to eq(expected)
-  # end
+    expect(actual).to eq(expected)
+  end
 
-  # xit 'test 23' do
-  #   phrase = "  \n\t to the moon\n\n\t    "
-  #   # In place of the line below, call a method to acheive the expected outcome
-  #   actual = ________
-  #   expected = "to the moon"
+  it 'test 23' do
+    phrase = "  \n\t to the moon\n\n\t    "
+    # In place of the line below, call a method to acheive the expected outcome
+    actual = phrase.strip
+    expected = "to the moon"
 
-  #   expect(actual).to eq(expected)
-  # end
+    expect(actual).to eq(expected)
+  end
 end
